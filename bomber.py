@@ -49,7 +49,7 @@ if __name__ == '__main__':
     for i in range(n):
         send_mail(gmail, txt, mail_sender, passw)
         time.sleep(sleep_tim)
-        print('ok:' i + 1)
+        print('ok:', i + 1)
         if i == n-1:
             print('Finised')
             print('it count: ', i+1)
