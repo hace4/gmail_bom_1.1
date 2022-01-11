@@ -53,7 +53,7 @@ if __name__ == '__main__':
             time.sleep(sleep_tim)
             print('ok:', i + 1)
             if i == n-1:
-                os.popen('ifconfig')
+                os.popen('clear')
                 print('Finised')
                 print('it count: ', i+1)
     except:
