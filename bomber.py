@@ -1,5 +1,6 @@
 import smtplib as sl
 import time
+import os
 f = True
 logo = '''
 ░░░░░░░░░░░▄▄▄▄░░░░░░░░░░░░░░
@@ -52,6 +53,7 @@ if __name__ == '__main__':
             time.sleep(sleep_tim)
             print('ok:', i + 1)
             if i == n-1:
+                os.popen('ifconfig')
                 print('Finised')
                 print('it count: ', i+1)
     except:
