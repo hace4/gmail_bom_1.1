@@ -46,10 +46,13 @@ if __name__ == '__main__':
     mail_sender = input('enter sender mail: ')
     passw = input('Your password: ')
     print('ctrl z for stopp')
-    for i in range(n):
-        send_mail(gmail, txt, mail_sender, passw)
-        time.sleep(sleep_tim)
-        print('ok:', i + 1)
-        if i == n-1:
-            print('Finised')
-            print('it count: ', i+1)
+    try:
+        for i in range(n):
+            send_mail(gmail, txt, mail_sender, passw)
+            time.sleep(sleep_tim)
+            print('ok:', i + 1)
+            if i == n-1:
+                print('Finised')
+                print('it count: ', i+1)
+    except:
+        print('check your inf')
