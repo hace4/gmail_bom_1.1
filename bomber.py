@@ -41,7 +41,7 @@ def send_mail(gmail, text, snd_mail, snd_pass):
 if __name__ == '__main__':
     gmail = input('Enter to bomb: ')
     n = int(input('iteration: '))
-    sleep_tim = input('ms: ' )
+    sleep_tim = int(input('ms: ' ))
     txt = input('msg txt:')
     mail_sender = input('enter sender mail: ')
     passw = input('Your password: ')
