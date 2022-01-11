@@ -1,6 +1,5 @@
-from threading import Thread
 import smtplib as sl
-
+import time
 f = True
 logo = '''
 ░░░░░░░░░░░▄▄▄▄░░░░░░░░░░░░░░
@@ -42,9 +41,12 @@ def send_mail(gmail, text, snd_mail, snd_pass):
 if __name__ == '__main__':
     gmail = input('Enter to bomb: ')
     n = int(input('iteration: '))
+    sleep_tim = input('ms: ' )
     txt = input('msg txt:')
     mail_sender = input('enter sender mail: ')
     passw = input('Your password: ')
+    print('ctrl z for stopp')
     for i in range(n):
         send_mail(gmail, txt, mail_sender, passw)
+        time.sleep(sleep_tim)
 
